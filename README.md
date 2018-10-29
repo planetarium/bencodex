@@ -9,7 +9,7 @@ value).   This adds the below data types to Bencoding:
  -  null
  -  Boolean values
  -  Unicode strings besides byte strings
- -  Dictionaries having Unicode keys
+ -  Dictionaries with both byte and Unicode string keys
 
 [Bencoding]: http://www.bittorrent.org/beps/bep_0003.html#bencoding
 
@@ -82,33 +82,21 @@ represent) use Python's literals.
     For example, `l4:spamu4:eggse` (`6c 34 3a 73 70 61 6d 75 34 3a 65 67 67 73
     65`) corresponds to `[b"spam", u"eggs"]`.
 
- -  There are two types of dictionaries: one with byte string keys and other
-    one with Unicode string keys.  Key types are homogeneous in a dictionary.
-
-    In the same manner to Bencoding, dictionaries having byte string keys
-    are encoded as a lowercase `d` followed by a list of alternating keys
+ -  Dictionaries are encoded as a `d` followed by a list of alternating keys
     and their corresponding values followed by an `e`.
 
-    Dictionaries having Unicode string keys are encoded as an uppercase `D`
-    followed by a list of alternating keys and their corresponding values
-    followed by an `e`.
-
-    Empty dictionaries are encoded as lowercase `de`.  `De` is invalid.
-
-    For example, `d3:cow3:moo4:spam4:eggse` (`64 33 3a 63 6f 77 33 3a 6d 6f 6f
-    34 3a 73 70 61 6d 34 3a 65 67 67 73 65`) corresponds to
-    `{b"cow": b"moo", b"spam": b"eggs"}`, and `Du4:spaml1:au1:bee` (`44 75 34
+    For example, `d3:cowu3:moou4:spam4:eggse` (`64 33 3a 63 6f 77 75 33 3a 6d
+    6f 6f 75 34 3a 73 70 61 6d 34 3a 65 67 67 73 65`) corresponds to
+    `{b"cow": u"moo", u"spam": b"eggs"}`, and `du4:spaml1:au1:bee` (`64 75 34
     3a 73 70 61 6d 6c 31 3a 61 75 31 3a 62 65 65`) corresponds to
     `{u"spam": [b"a", u"b"]}`.
 
-    Keys must appear in the certain order:
+    Keys must be Unicode or byte strings, and appear in the certain order:
 
+     -  Unicode strings do not appear earlier than byte strings.
      -  Byte strings are sorted as raw strings, not alphanumerics.
      -  Unicode strings are sorted as their UTF-8 representations,
         not any collation order or chart order listed by Unicode.
 
-    `du1:k1:ve` (`64 75 31 3a 6b 31 3a 76 65`) is invalid because a Unicode
-    key (`u1:k`) must not appear in a dictionary of byte string keys.
-
-    `D1:ku1:ve` (`44 31 3a 6b 75 31 3a 76 65`) is invalid because a byte string
-    key (`1:k`) must not appear in a dictionary of Unicode keys.
+    `du1:k1:v1:k1:ve` (`64 75 31 3a 6b 31 3a 76 31 3a 6b 31 3a 76 65`) is
+    invalid because `u1:k` appear earlier than `1:k`.
