@@ -93,6 +93,8 @@ represent) use Python's literals.
     followed by a list of alternating keys and their corresponding values
     followed by an `e`.
 
+    Empty dictionaries are encoded as lowercase `de`.  `De` is invalid.
+
     For example, `d3:cow3:moo4:spam4:eggse` (`64 33 3a 63 6f 77 33 3a 6d 6f 6f
     34 3a 73 70 61 6d 34 3a 65 67 67 73 65`) corresponds to
     `{b"cow": b"moo", b"spam": b"eggs"}`, and `Du4:spaml1:au1:bee` (`44 75 34
