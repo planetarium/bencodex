@@ -1,0 +1,9 @@
+- a Unicode string
+- !!binary "YSBieXRlIHN0cmluZw=="  # b"a byte string"
+- 123
+- -456
+- true
+- false
+- null
+- a: dict
+- [a, list]

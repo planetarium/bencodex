@@ -100,3 +100,44 @@ represent) use Python's literals.
 
     `du1:k1:v1:k1:ve` (`64 75 31 3a 6b 31 3a 76 31 3a 6b 31 3a 76 65`) is
     invalid because `u1:k` appear earlier than `1:k`.
+
+
+Test suite
+----------
+
+The *testsuite/* directory contains a set of Bencodex tests.  Every test case
+is a pair of two files; *.dat* is an arbitrary Bencodex data and a *.yaml*
+is its corresponding value in YAML.  For example, *list.dat* contains
+the bellow Bencodex data:
+
+~~~~ bencodex
+lu16:a Unicode string13:a byte stringi123ei-456etfndu1:au4:dictelu1:au4:listee
+~~~~
+
+which encodes the value corresponding to *list.yaml*, that is:
+
+~~~~ yaml
+- a Unicode string
+- !!binary "YSBieXRlIHN0cmluZw=="  # b"a byte string"
+- 123
+- -456
+- true
+- false
+- null
+- a: dict
+- [a, list]
+~~~~
+
+An implementation should satisfy the below rules:
+
+ -  Bytes that an encoder builds from a YAML content should be exactly same to
+    the contents of a *.dat* file that corresponds to the *.yaml* file.
+
+ -  A content a decoder read from a *.dat* file should be equivalent to
+    the content of a *.yaml* file that corresponds to the *.dat* file.
+
+
+----
+
+This document (*README.md*) and every content in this repository including
+the test suite (*testsuite/*) are in the public domain.

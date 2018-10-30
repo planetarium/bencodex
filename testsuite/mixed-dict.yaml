@@ -1,0 +1,6 @@
+a: 1
+b: 2
+c: 3
+!!binary "YQ==": 1
+!!binary "Yg==": 2
+!!binary "Yw==": 3
