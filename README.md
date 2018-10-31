@@ -108,7 +108,7 @@ Test suite
 The *testsuite/* directory contains a set of Bencodex tests.  Every test case
 is a pair of two files; *.dat* is an arbitrary Bencodex data and a *.yaml*
 is its corresponding value in YAML.  For example, *list.dat* contains
-the bellow Bencodex data:
+the below Bencodex data:
 
 ~~~~ bencodex
 lu16:a Unicode string13:a byte stringi123ei-456etfndu1:au4:dictelu1:au4:listee
