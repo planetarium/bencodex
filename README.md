@@ -1,6 +1,8 @@
 Bencodex: Bencoding Extended
 ============================
 
+*The version of this document is **1.0 draft**.  See also [changelog].*
+
 Bencodex is a serialization format that extends BitTorrent's [Bencoding].
 Since it is a superset of Bencoding, every valid Bencoding representation is
 a valid Bencodex representation of the same meaning (i.e., represents the same
@@ -12,6 +14,7 @@ value).  Bencodex adds the below data types to Bencoding:
  -  Dictionaries with both byte and Unicode string keys
 
 [Bencoding]: http://www.bittorrent.org/beps/bep_0003.html#bencoding
+[changelog]: ./CHANGES.md
 
 
 Why not *[insert your favorite format here]*
