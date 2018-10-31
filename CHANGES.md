@@ -27,7 +27,9 @@ it can mention only a major version.
 Version 1.0
 -----------
 
-To be released.  This extends the below things on the existing [Bencoding]:
+Published on November 1, 2018.
+
+This extends the below things on the existing [Bencoding]:
 
  -  null
  -  Boolean values

@@ -1,7 +1,7 @@
 Bencodex: Bencoding Extended
 ============================
 
-*The version of this document is **1.0 draft**.  See also [changelog].*
+*The version of this document is **1.0**.  See also [changelog].*
 
 Bencodex is a serialization format that extends BitTorrent's [Bencoding].
 Since it is a superset of Bencoding, every valid Bencoding representation is
