@@ -4,7 +4,7 @@ Bencodex: Bencoding Extended
 Bencodex is a serialization format that extends BitTorrent's [Bencoding].
 Since it is a superset of Bencoding, every valid Bencoding representation is
 a valid Bencodex representation of the same meaning (i.e., represents the same
-value).   This adds the below data types to Bencoding:
+value).  Bencodex adds the below data types to Bencoding:
 
  -  null
  -  Boolean values
@@ -18,18 +18,18 @@ Why not *[insert your favorite format here]*
 --------------------------------------------
 
 The unique feature of Bencoding is forced normalization.
-According Wikipedia's [Bencode] page:
+According to Wikipedia's [Bencode] page:
 
 > For each possible (complex) value, there is only a single valid bencoding;
 > i.e. there is a [bijection] between values and their encodings.
 > This has the advantage that applications may compare bencoded values by
 > comparing their encoded forms, eliminating the need to decode the values.
 
-This makes things really simple when an application need to determine
+This makes things really simple when an application needs to determine
 if encoded values are the same, in particular, with cryptographic hash or
 digital signatures.
 
-There have been countless improvements on data serialization like
+There have been countless improvements in data serialization like
 rich data types, human readability, compact binary representation,
 zero-copy serialization, and even streaming, but canonical representation
 is still not well counted.
@@ -106,7 +106,7 @@ Test suite
 ----------
 
 The *testsuite/* directory contains a set of Bencodex tests.  Every test case
-is a pair of two files; *.dat* is an arbitrary Bencodex data and a *.yaml*
+is a pair of two files; *.dat* is an arbitrary Bencodex data, and a *.yaml*
 is its corresponding value in YAML.  For example, *list.dat* contains
 the below Bencodex data:
 
