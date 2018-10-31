@@ -1,0 +1,21 @@
+language: minimal
+script:
+- '[[ "$TRAVIS_TAG" = "" ]] || fgrep "**$TRAVIS_TAG**" README.md'
+- |
+  last_commit="${TRAVIS_PULL_REQUEST_SHA:-${TRAVIS_TAG:-${TRAVIS_COMMIT}}}"
+  echo "$last_commit"
+  git show --format=%B --quiet "$last_commit" > /tmp/last-commit-message
+  cat /tmp/last-commit-message
+- |
+  if fgrep '[changelog skip]' /tmp/last-commit-message > /dev/null; then
+    echo "Skip changelog checker..."
+  elif [[ "$TRAVIS_TAG" != "" ]]; then
+    ! fgrep -i "to be released" CHANGES.md
+  elif [[ "$TRAVIS_COMMIT_RANGE" != "" ]]; then
+    {
+      git diff --name-only "$TRAVIS_COMMIT_RANGE" || \
+      git diff --name-only "$TRAVIS_COMMIT^..$TRAVIS_COMMIT"
+    } > /tmp/changed-files.txt
+    cat /tmp/changed-files.txt
+    fgrep CHANGES.md /tmp/changed-files.txt
+  fi

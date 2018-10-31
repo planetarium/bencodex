@@ -27,4 +27,11 @@ it can mention only a major version.
 Version 1.0
 -----------
 
-To be released.
+To be released.  This extends the below things on the existing [Bencoding]:
+
+ -  null
+ -  Boolean values
+ -  Unicode strings besides byte strings
+ -  Dictionaries with both byte and Unicode string keys
+
+[Bencoding]: http://www.bittorrent.org/beps/bep_0003.html#bencoding
