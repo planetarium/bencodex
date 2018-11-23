@@ -1,0 +1,520 @@
+{
+  "type": "list",
+  "values": [
+    {
+      "pairs": [
+        {
+          "key": {
+            "type": "text",
+            "value": "byte-string"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "human-readable"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "name"
+          },
+          "value": {
+            "type": "text",
+            "value": "bencode"
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "normalization"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "schema"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "unicode-text"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "zero-copy"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        }
+      ],
+      "type": "dictionary"
+    },
+    {
+      "pairs": [
+        {
+          "key": {
+            "type": "text",
+            "value": "byte-string"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "human-readable"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "name"
+          },
+          "value": {
+            "type": "text",
+            "value": "bencodex"
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "normalization"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "schema"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "unicode-text"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "zero-copy"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        }
+      ],
+      "type": "dictionary"
+    },
+    {
+      "pairs": [
+        {
+          "key": {
+            "type": "text",
+            "value": "byte-string"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "human-readable"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "name"
+          },
+          "value": {
+            "type": "text",
+            "value": "capnp"
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "normalization"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "schema"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "unicode-text"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "zero-copy"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        }
+      ],
+      "type": "dictionary"
+    },
+    {
+      "pairs": [
+        {
+          "key": {
+            "type": "text",
+            "value": "byte-string"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "human-readable"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "name"
+          },
+          "value": {
+            "type": "text",
+            "value": "json"
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "normalization"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "schema"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "unicode-text"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "zero-copy"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        }
+      ],
+      "type": "dictionary"
+    },
+    {
+      "pairs": [
+        {
+          "key": {
+            "type": "text",
+            "value": "byte-string"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "human-readable"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "name"
+          },
+          "value": {
+            "type": "text",
+            "value": "msgpack"
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "normalization"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "schema"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "unicode-text"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "zero-copy"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        }
+      ],
+      "type": "dictionary"
+    },
+    {
+      "pairs": [
+        {
+          "key": {
+            "type": "text",
+            "value": "byte-string"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "human-readable"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "name"
+          },
+          "value": {
+            "type": "text",
+            "value": "thrift"
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "normalization"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "schema"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "unicode-text"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "zero-copy"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        }
+      ],
+      "type": "dictionary"
+    },
+    {
+      "pairs": [
+        {
+          "key": {
+            "type": "text",
+            "value": "byte-string"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "human-readable"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "name"
+          },
+          "value": {
+            "type": "text",
+            "value": "yaml"
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "normalization"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "unicode-text"
+          },
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "key": {
+            "type": "text",
+            "value": "zero-copy"
+          },
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        }
+      ],
+      "type": "dictionary"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "pairs": [
+    {
+      "key": {
+        "type": "text",
+        "value": "EPO"
+      },
+      "value": {
+        "pairs": [
+          {
+            "key": {
+              "type": "text",
+              "value": "albums"
+            },
+            "value": {
+              "type": "list",
+              "values": [
+                {
+                  "type": "text",
+                  "value": "Down Town"
+                },
+                {
+                  "type": "text",
+                  "value": "Goodies"
+                },
+                {
+                  "type": "text",
+                  "value": "Vitamin EPO"
+                },
+                {
+                  "type": "text",
+                  "value": "Hi-touch Hi-tech"
+                }
+              ]
+            }
+          },
+          {
+            "key": {
+              "type": "text",
+              "value": "debut"
+            },
+            "value": {
+              "decimal": "1980",
+              "type": "integer"
+            }
+          },
+          {
+            "key": {
+              "type": "text",
+              "value": "name"
+            },
+            "value": {
+              "type": "text",
+              "value": "\u5bae\u5ddd \u69ae\u5b50"
+            }
+          }
+        ],
+        "type": "dictionary"
+      }
+    },
+    {
+      "key": {
+        "type": "text",
+        "value": "\u5c71\u4e0b\u9054\u90ce"
+      },
+      "value": {
+        "pairs": [
+          {
+            "key": {
+              "type": "text",
+              "value": "albums"
+            },
+            "value": {
+              "type": "list",
+              "values": [
+                {
+                  "type": "text",
+                  "value": "Spacy"
+                },
+                {
+                  "type": "text",
+                  "value": "Ride On Time"
+                },
+                {
+                  "type": "text",
+                  "value": "For You"
+                },
+                {
+                  "type": "text",
+                  "value": "Melodies"
+                }
+              ]
+            }
+          },
+          {
+            "key": {
+              "type": "text",
+              "value": "debut"
+            },
+            "value": {
+              "decimal": "1973",
+              "type": "integer"
+            }
+          }
+        ],
+        "type": "dictionary"
+      }
+    },
+    {
+      "key": {
+        "type": "text",
+        "value": "\u674f\u91cc"
+      },
+      "value": {
+        "pairs": [
+          {
+            "key": {
+              "type": "text",
+              "value": "albums"
+            },
+            "value": {
+              "type": "list",
+              "values": [
+                {
+                  "type": "text",
+                  "value": "Timely!!"
+                },
+                {
+                  "type": "text",
+                  "value": "Coool"
+                },
+                {
+                  "type": "text",
+                  "value": "Wave"
+                }
+              ]
+            }
+          },
+          {
+            "key": {
+              "type": "text",
+              "value": "debut"
+            },
+            "value": {
+              "decimal": "1978",
+              "type": "integer"
+            }
+          },
+          {
+            "key": {
+              "type": "text",
+              "value": "name"
+            },
+            "value": {
+              "type": "text",
+              "value": "\u5ddd\u5d8b \u6804\u5b50"
+            }
+          }
+        ],
+        "type": "dictionary"
+      }
+    },
+    {
+      "key": {
+        "type": "text",
+        "value": "\u89d2\u677e\u654f\u751f"
+      },
+      "value": {
+        "pairs": [
+          {
+            "key": {
+              "type": "text",
+              "value": "albums"
+            },
+            "value": {
+              "type": "list",
+              "values": [
+                {
+                  "type": "text",
+                  "value": "Sea Breeze"
+                },
+                {
+                  "type": "text",
+                  "value": "On The City Shore"
+                },
+                {
+                  "type": "text",
+                  "value": "After 5 Clash"
+                }
+              ]
+            }
+          },
+          {
+            "key": {
+              "type": "text",
+              "value": "debut"
+            },
+            "value": {
+              "decimal": "1981",
+              "type": "integer"
+            }
+          },
+          {
+            "key": {
+              "type": "text",
+              "value": "name"
+            },
+            "value": {
+              "type": "text",
+              "value": "\u89d2\u677e \u654f\u751f"
+            }
+          }
+        ],
+        "type": "dictionary"
+      }
+    }
+  ],
+  "type": "dictionary"
+}

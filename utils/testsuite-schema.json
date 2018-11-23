@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/planetarium/bencodex/tree/1.0/testsuite",
+  "title": "Bencodex test suite semantics representation",
+  "description": "This forms .json files in the Bencodex test suite.",
+  "definitions": {
+    "value": {
+      "oneOf": [
+        {"$ref": "#/definitions/null"},
+        {"$ref": "#/definitions/boolean"},
+        {"$ref": "#/definitions/integer"},
+        {"$ref": "#/definitions/binary"},
+        {"$ref": "#/definitions/text"},
+        {"$ref": "#/definitions/list"},
+        {"$ref": "#/definitions/dictionary"}
+      ]
+    },
+
+    "null": {
+      "description": "Represents a Bencodex null value.",
+      "type": "object",
+      "properties": {
+        "type": {"const": "null"}
+      },
+      "required": ["type"]
+    },
+
+    "boolean": {
+      "description": "Represents a Bencodex boolean value.",
+      "type": "object",
+      "properties": {
+        "type": {"const": "boolean"},
+        "value": {"type": "boolean"}
+      },
+      "required": ["type", "value"]
+    },
+
+    "integer": {
+      "description": "Represents a Bencodex integer, in a decimal string.",
+      "type": "object",
+      "properties": {
+        "type": {"const": "integer"},
+        "decimal": {
+          "type": "string",
+          "pattern": "^-?[1-9][0-9]*$|^0$"
+        }
+      },
+      "required": ["type", "decimal"]
+    },
+
+    "binary": {
+      "description": "Represents a Bencodex byte string (i.e., binary data).",
+      "type": "object",
+      "properties": {
+        "type": {"const": "binary"},
+        "base64": {
+          "description": "Binary data encoded in Base64.",
+          "type": "string",
+          "pattern":
+            "^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$"
+        }
+      },
+      "required": ["type", "base64"]
+    },
+
+    "text": {
+      "description": "Represents a Bencodex Unicode text.",
+      "type": "object",
+      "properties": {
+        "type": {"const": "text"},
+        "value": {"type": "string"}
+      },
+      "required": ["type", "value"]
+    },
+
+    "list": {
+      "description": "Represents a Bencodex list.",
+      "type": "object",
+      "properties": {
+        "type": {"const": "list"},
+        "values": {
+          "description":
+            "Values a list contains. Each value is an also Bencodex value.",
+          "type": "array",
+          "items": {"$ref": "#/definitions/value"}
+        }
+      },
+      "required": ["type", "values"]
+    },
+
+    "dictionary": {
+      "description": "Represents a Bencodex dictionary.",
+      "type": "object",
+      "properties": {
+        "type": {"const": "dictionary"},
+        "pairs": {
+          "description":
+            "Key-value pairs that a dictionary contains.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "description":
+                  "A dictionary key is a binary or a Unicode text.",
+                "oneOf": [
+                  {"$ref": "#/definitions/binary"},
+                  {"$ref": "#/definitions/text"}
+                ]
+              },
+              "value": {
+                "description": "A dictionary value is an any Bencodex value.",
+                "$ref": "#/definitions/value"
+              }
+            },
+            "required": ["key", "value"]
+          }
+        }
+      },
+      "required": ["type", "pairs"]
+    }
+  },
+  "$ref": "#/definitions/value"
+}

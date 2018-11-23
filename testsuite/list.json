@@ -1,0 +1,60 @@
+{
+  "type": "list",
+  "values": [
+    {
+      "type": "text",
+      "value": "a Unicode string"
+    },
+    {
+      "base64": "YSBieXRlIHN0cmluZw==",
+      "type": "binary"
+    },
+    {
+      "decimal": "123",
+      "type": "integer"
+    },
+    {
+      "decimal": "-456",
+      "type": "integer"
+    },
+    {
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "type": "null"
+    },
+    {
+      "pairs": [
+        {
+          "key": {
+            "type": "text",
+            "value": "a"
+          },
+          "value": {
+            "type": "text",
+            "value": "dict"
+          }
+        }
+      ],
+      "type": "dictionary"
+    },
+    {
+      "type": "list",
+      "values": [
+        {
+          "type": "text",
+          "value": "a"
+        },
+        {
+          "type": "text",
+          "value": "list"
+        }
+      ]
+    }
+  ]
+}

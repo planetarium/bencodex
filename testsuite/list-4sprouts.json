@@ -1,0 +1,21 @@
+{
+  "type": "list",
+  "values": [
+    {
+      "type": "text",
+      "value": "\u60fb\u96b1\u4e4b\u5fc3"
+    },
+    {
+      "type": "text",
+      "value": "\u7f9e\u60e1\u4e4b\u5fc3"
+    },
+    {
+      "type": "text",
+      "value": "\u8fad\u8b93\u4e4b\u5fc3"
+    },
+    {
+      "type": "text",
+      "value": "\u662f\u975e\u4e4b\u5fc3"
+    }
+  ]
+}

@@ -109,9 +109,11 @@ Test suite
 ----------
 
 The *testsuite/* directory contains a set of Bencodex tests.  Every test case
-is a pair of two files; *.dat* is an arbitrary Bencodex data, and a *.yaml*
-is its corresponding value in YAML.  For example, *list.dat* contains
-the below Bencodex data:
+is a triple of *.dat* which is an arbitrary Bencodex data, a *.yaml* which
+is its corresponding value in YAML, and a *.json* which is an alternative to
+YAML and renders an AST of the Bencodex value.
+
+For example, *list.dat* contains the below Bencodex data:
 
 ~~~~ bencodex
 lu16:a Unicode string13:a byte stringi123ei-456etfndu1:au4:dictelu1:au4:listee
@@ -131,13 +133,85 @@ which encodes the value corresponding to *list.yaml*, that is:
 - [a, list]
 ~~~~
 
+Or, as an alternative there's *list.json* which renders an AST of the value
+structure:
+
+~~~~ json
+{
+  "type": "list",
+  "values": [
+    {
+      "type": "text",
+      "value": "a Unicode string"
+    },
+    {
+      "base64": "YSBieXRlIHN0cmluZw==",
+      "type": "binary"
+    },
+    {
+      "decimal": "123",
+      "type": "integer"
+    },
+    {
+      "decimal": "-456",
+      "type": "integer"
+    },
+    {
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "type": "null"
+    },
+    {
+      "pairs": [
+        {
+          "key": {
+            "type": "text",
+            "value": "a"
+          },
+          "value": {
+            "type": "text",
+            "value": "dict"
+          }
+        }
+      ],
+      "type": "dictionary"
+    },
+    {
+      "type": "list",
+      "values": [
+        {
+          "type": "text",
+          "value": "a"
+        },
+        {
+          "type": "text",
+          "value": "list"
+        }
+      ]
+    }
+  ]
+}
+~~~~
+
+Note that the schema of *.json* files is formally described in [JSON Schema].
+see also [utils/testsuite-schema.json](./utils/testsuite-schema.json).
+
 An implementation should satisfy the below rules:
 
- -  Bytes that an encoder builds from a YAML content should be exactly same to
-    the contents of a *.dat* file that corresponds to the *.yaml* file.
+ -  Bytes that an encoder builds from a YAML/JSON content should be exactly
+    same to the contents of a *.dat* file that corresponds to
+    the *.yaml*/*json* file.
 
  -  A content a decoder read from a *.dat* file should be equivalent to
-    the content of a *.yaml* file that corresponds to the *.dat* file.
+    the content of a *.yaml*/*.json* file that corresponds to the *.dat* file.
+
+[JSON Schema]: https://json-schema.org/
 
 
 ----

@@ -1,0 +1,35 @@
+{
+  "pairs": [
+    {
+      "key": {
+        "base64": "YQ==",
+        "type": "binary"
+      },
+      "value": {
+        "decimal": "1",
+        "type": "integer"
+      }
+    },
+    {
+      "key": {
+        "base64": "Yg==",
+        "type": "binary"
+      },
+      "value": {
+        "decimal": "2",
+        "type": "integer"
+      }
+    },
+    {
+      "key": {
+        "base64": "Yw==",
+        "type": "binary"
+      },
+      "value": {
+        "decimal": "3",
+        "type": "integer"
+      }
+    }
+  ],
+  "type": "dictionary"
+}

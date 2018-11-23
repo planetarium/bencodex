@@ -1,0 +1,35 @@
+{
+  "pairs": [
+    {
+      "key": {
+        "type": "text",
+        "value": "a"
+      },
+      "value": {
+        "decimal": "1",
+        "type": "integer"
+      }
+    },
+    {
+      "key": {
+        "type": "text",
+        "value": "b"
+      },
+      "value": {
+        "decimal": "2",
+        "type": "integer"
+      }
+    },
+    {
+      "key": {
+        "type": "text",
+        "value": "c"
+      },
+      "value": {
+        "decimal": "3",
+        "type": "integer"
+      }
+    }
+  ],
+  "type": "dictionary"
+}

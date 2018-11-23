@@ -24,6 +24,20 @@ In order to an implementation indicates the specification version it follows,
 it can mention only a major version.
 
 
+Version 1.1
+-----------
+
+To be released.
+
+ -  Since YAML is a relatively large and complex specification, only few
+    implementations can deal with [`!!binary`][yaml-binary] tag which is many
+    YAML files in the Bencodex testsuite uses.  To consider such practical
+    reality, JSON files that renders a AST of the corresponding Bencodex value
+    were added as an alternative to YAML files.
+
+[yaml-binary]: http://yaml.org/type/binary.html
+
+
 Version 1.0
 -----------
 
