@@ -1,6 +1,8 @@
 a: 1
-b: 2
-c: 3
+"a\u0301": 2
+b: 3
+c: 4
+"\u00e1": 5
 !!binary "YQ==": 1
 !!binary "Yg==": 2
 !!binary "Yw==": 3

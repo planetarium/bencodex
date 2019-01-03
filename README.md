@@ -97,9 +97,14 @@ represent) use Python's literals.
     Keys must be Unicode or byte strings, and appear in the certain order:
 
      -  Unicode strings do not appear earlier than byte strings.
+
      -  Byte strings are sorted as raw strings, not alphanumerics.
-     -  Unicode strings are sorted as their UTF-8 representations,
-        not any collation order or chart order listed by Unicode.
+
+     -  Unicode strings are sorted as their UTF-8 *byte* representations,
+        *not* any collation order or chart order listed by Unicode.
+
+        For example, `b` (`62`) should be followed by `á` (`C3 A1`),
+        because the byte `62` is less than the byte `C3`.
 
     `du1:k1:v1:k1:ve` (`64 75 31 3a 6b 31 3a 76 31 3a 6b 31 3a 76 65`) is
     invalid because `u1:k` appear earlier than `1:k`.

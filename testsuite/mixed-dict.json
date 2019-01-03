@@ -43,7 +43,7 @@
     {
       "key": {
         "type": "text",
-        "value": "b"
+        "value": "a\u0301"
       },
       "value": {
         "decimal": "2",
@@ -53,10 +53,30 @@
     {
       "key": {
         "type": "text",
-        "value": "c"
+        "value": "b"
       },
       "value": {
         "decimal": "3",
+        "type": "integer"
+      }
+    },
+    {
+      "key": {
+        "type": "text",
+        "value": "c"
+      },
+      "value": {
+        "decimal": "4",
+        "type": "integer"
+      }
+    },
+    {
+      "key": {
+        "type": "text",
+        "value": "\u00e1"
+      },
+      "value": {
+        "decimal": "5",
         "type": "integer"
       }
     }

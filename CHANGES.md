@@ -35,7 +35,12 @@ To be released.
     reality, JSON files that renders a AST of the corresponding Bencodex value
     were added as an alternative to YAML files.
 
+ -  Since the ordering rule of Unicode keys in a dictionary might be confusing,
+    the specifcation became to elaborate about this, a test to check this was
+    also added.  [[#1]]
+
 [yaml-binary]: http://yaml.org/type/binary.html
+[#1]: https://github.com/planetarium/bencodex/issues/1
 
 
 Version 1.0
