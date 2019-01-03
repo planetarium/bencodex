@@ -27,7 +27,7 @@ it can mention only a major version.
 Version 1.1
 -----------
 
-To be released.
+Published on January 4, 2019.
 
  -  Since YAML is a relatively large and complex specification, only few
     implementations can deal with [`!!binary`][yaml-binary] tag which is many

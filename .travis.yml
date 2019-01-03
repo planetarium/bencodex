@@ -6,16 +6,19 @@ install:
 script:
 # Versions and changelogs
 - |
+  set -e
   if [[ "$TRAVIS_TAG" != "" ]]; then
     fgrep "**$TRAVIS_TAG**" README.md
     fgrep "/$TRAVIS_TAG/" utils/testsuite-schema.json
   fi
 - |
+  set -e
   last_commit="${TRAVIS_PULL_REQUEST_SHA:-${TRAVIS_TAG:-${TRAVIS_COMMIT}}}"
   echo "$last_commit"
   git show --format=%B --quiet "$last_commit" > /tmp/last-commit-message
   cat /tmp/last-commit-message
 - |
+  set -e
   if fgrep '[changelog skip]' /tmp/last-commit-message > /dev/null; then
     echo "Skip changelog checker..."
   elif [[ "$TRAVIS_TAG" != "" ]]; then
@@ -31,6 +34,7 @@ script:
 
 # JSON test files
 - |
+  set -e
   for j in testsuite/*.json; do
     ajv validate -s utils/testsuite-schema.json -d "$j"
   done

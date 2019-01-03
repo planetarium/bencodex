@@ -1,7 +1,7 @@
 Bencodex: Bencoding Extended
 ============================
 
-*The version of this document is **1.0**.  See also [changelog].*
+*The version of this document is **1.1**.  See also [changelog].*
 
 *There is a list of implementations.  See also [LIBRARIES.tsv](./LIBRARIES.tsv)
 file.*
