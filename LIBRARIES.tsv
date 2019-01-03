@@ -1,0 +1,5 @@
+"Project Name"	"Platform"	"Language"	"Spec Version"	"Encoder"	"Decoder"	"Test Suite"	"Website"
+"bencodex-python"	"Python"	"Python"	"1"	"Provided"	"Provided"	"1.0"	"https://github.com/planetarium/bencodex-python"
+"bencodex.net"	".NET"	"C#"	"1"	"Provided"	"Provided"	"1.0"	"https://github.com/planetarium/bencodex.net"
+"disjukr/bencodex"	"JavaScript"	"TypeScript"	"1"	"Provided"	"Provided"	"1.0"	"https://github.com/disjukr/bencodex"
+"bencodex-haskell"	"Haskell"	"Haskell"	"1"	"Provided"	"Provided"	"1.0"	"https://github.com/dahlia/bencodex-haskell"

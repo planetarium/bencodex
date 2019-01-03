@@ -39,6 +39,9 @@ To be released.
     the specifcation became to elaborate about this, a test to check this was
     also added.  [[#1]]
 
+ -  It now has a list of implementations.  It is placed in
+    [*LIBRARIES.tsv*](./LIBRARIES.tsv) file.
+
 [yaml-binary]: http://yaml.org/type/binary.html
 [#1]: https://github.com/planetarium/bencodex/issues/1
 
