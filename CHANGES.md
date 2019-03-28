@@ -24,6 +24,12 @@ In order to an implementation indicates the specification version it follows,
 it can mention only a major version.
 
 
+Version 1.2
+-----------
+
+To be released.
+
+
 Version 1.1
 -----------
 
