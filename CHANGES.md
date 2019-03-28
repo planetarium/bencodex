@@ -29,6 +29,10 @@ Version 1.2
 
 To be released.
 
+ -  Added a *.gitattributes* file to *testsuite/* directory so that
+    *.dat* files are not affected by Git's `core.autocrlf` settings
+    on Windows.
+
 
 Version 1.1
 -----------
