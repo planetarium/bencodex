@@ -1,0 +1,10 @@
+{
+  "default": true,
+  "MD003": { "style": "setext_with_atx" },
+  "MD006": false,
+  "MD007": false,
+  "MD029": { "style": "ordered" },
+  "MD030": { "ul_single": 2, "ol_single": 2, "ul_multi": 2, "ol_multi": 2 },
+  "no-hard-tabs": true,
+  "whitespace": false
+}
