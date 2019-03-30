@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/planetarium/bencodex/tree/1.1/testsuite",
+  "$id": "https://github.com/planetarium/bencodex/tree/1.2/testsuite",
   "title": "Bencodex test suite semantics representation",
   "description": "This forms .json files in the Bencodex test suite.",
   "definitions": {

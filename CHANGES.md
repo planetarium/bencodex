@@ -27,7 +27,7 @@ it can mention only a major version.
 Version 1.2
 -----------
 
-To be released.
+Published on March 31, 2019.
 
  -  Added a *.gitattributes* file to *testsuite/* directory so that
     *.dat* files are not affected by Git's `core.autocrlf` settings
