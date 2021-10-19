@@ -4,3 +4,4 @@
 "disjukr/bencodex"	"JavaScript"	"TypeScript"	"1"	"Provided"	"Provided"	"1.0"	"https://github.com/disjukr/bencodex"
 "bencodex-haskell"	"Haskell"	"Haskell"	"1"	"Provided"	"Provided"	"1.0"	"https://github.com/dahlia/bencodex-haskell"
 "bencodex-rs"	"Rust"	"Rust"	"1"	"Provided"	"Provided"	"1.2"	"https://github.com/moreal/bencodex-rs"
+"bencodex-php"	"PHP"	"PHP"	"1"	"Provided"	"Provided"	"1.2"	"https://github.com/dahlia/bencodex-php"
