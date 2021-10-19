@@ -1,0 +1,21 @@
+name: check
+on: [push, pull_request]
+
+jobs:
+  check:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: 
+      if: startsWith(github.ref, 'refs/tags/')
+      run: |
+        set -evx
+        VERSION="${GITHUB_REF:10}"
+        fgrep "**$VERSION**" README.md
+        fgrep "/$VERSION/" utils/testsuite-schema.json
+    - run: |
+        set -e
+        npm install -g ajv-cli
+        for j in testsuite/*.json; do
+          ajv validate -s utils/testsuite-schema.json -d "$j"
+        done
