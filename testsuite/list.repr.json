@@ -1,0 +1,16 @@
+[
+  "\ufeffa Unicode string",
+  "0x61206279746520737472696e67",
+  "123",
+  "-456",
+  true,
+  false,
+  null,
+  {
+    "\ufeffa": "\ufeffdict"
+  },
+  [
+    "\ufeffa",
+    "\ufefflist"
+  ]
+]
