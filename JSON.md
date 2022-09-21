@@ -10,6 +10,9 @@ value to a valid JSON value to be interchanged.
 This specification defines a standard way to represent a Bencodex value to (a
 subset of) JSON and how to decode/encode them.
 
+Note that this specification is a separate specification from Bencodex itself.
+Bencodex implementations are not required to implement this specification.
+
 ### Conventions Used in This Document
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
