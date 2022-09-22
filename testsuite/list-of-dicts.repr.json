@@ -1,0 +1,64 @@
+[
+  {
+    "\ufeffname": "\ufeffbencode",
+    "\ufeffhuman-readable": false,
+    "\ufeffbyte-string": true,
+    "\ufeffunicode-text": false,
+    "\ufeffzero-copy": false,
+    "\ufeffschema": false,
+    "\ufeffnormalization": true
+  },
+  {
+    "\ufeffname": "\ufeffbencodex",
+    "\ufeffhuman-readable": false,
+    "\ufeffbyte-string": true,
+    "\ufeffunicode-text": true,
+    "\ufeffzero-copy": false,
+    "\ufeffschema": false,
+    "\ufeffnormalization": true
+  },
+  {
+    "\ufeffname": "\ufeffcapnp",
+    "\ufeffhuman-readable": false,
+    "\ufeffbyte-string": true,
+    "\ufeffunicode-text": true,
+    "\ufeffzero-copy": true,
+    "\ufeffschema": true,
+    "\ufeffnormalization": false
+  },
+  {
+    "\ufeffname": "\ufeffjson",
+    "\ufeffhuman-readable": true,
+    "\ufeffbyte-string": false,
+    "\ufeffunicode-text": true,
+    "\ufeffzero-copy": false,
+    "\ufeffschema": false,
+    "\ufeffnormalization": false
+  },
+  {
+    "\ufeffname": "\ufeffmsgpack",
+    "\ufeffhuman-readable": false,
+    "\ufeffbyte-string": true,
+    "\ufeffunicode-text": true,
+    "\ufeffzero-copy": false,
+    "\ufeffschema": false,
+    "\ufeffnormalization": false
+  },
+  {
+    "\ufeffname": "\ufeffthrift",
+    "\ufeffhuman-readable": false,
+    "\ufeffbyte-string": true,
+    "\ufeffunicode-text": true,
+    "\ufeffzero-copy": false,
+    "\ufeffschema": true,
+    "\ufeffnormalization": false
+  },
+  {
+    "\ufeffname": "\ufeffyaml",
+    "\ufeffhuman-readable": true,
+    "\ufeffbyte-string": true,
+    "\ufeffunicode-text": true,
+    "\ufeffzero-copy": false,
+    "\ufeffnormalization": false
+  }
+]

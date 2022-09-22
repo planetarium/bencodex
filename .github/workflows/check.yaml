@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
-    - name: 
+    - name:
       if: startsWith(github.ref, 'refs/tags/')
       run: |
         set -evx
@@ -17,5 +17,7 @@ jobs:
         set -e
         npm install -g ajv-cli
         for j in testsuite/*.json; do
-          ajv validate -s utils/testsuite-schema.json -d "$j"
+          if [[ "$j" != *.repr.json ]]; then
+            ajv validate -s utils/testsuite-schema.json -d "$j"
+          fi
         done

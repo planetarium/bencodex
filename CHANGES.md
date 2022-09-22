@@ -23,6 +23,14 @@ it does not increase the major version but only the minor version.
 In order to an implementation indicates the specification version it follows,
 it can mention only a major version.
 
+Version 1.3
+-----------
+Published on September 9, 2022.
+
+ -  Introduces [Bencodex JSON Representation](./JSON.md) specification.
+    Conformance to this specification is optional and it is not a
+    required part of Bencodex.
+
 
 Version 1.2
 -----------
