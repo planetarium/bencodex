@@ -27,7 +27,7 @@ Version 1.3
 -----------
 Published on September 9, 2022.
 
- -  Introduces “Bencodex JSON Representation” specification.
+ -  Introduces [Bencodex JSON Representation](./JSON.md) specification.
     Conformance to this specification is optional and it is not a
     required part of Bencodex.
 
