@@ -37,8 +37,9 @@ parsed as a byte-string encoded in hexadecimal.
 be parsed as a byte string encoded in base64 as defined in
 [RFC 4648](https://www.rfc-editor.org/rfc/rfc4648.html)[^RFC-4648].
 - In case no prefixes mentioned above are found, the value of the string
-**MUST** be parsed as an integer and having any non-digit character in the
-string **SHOULD** result in an error.
+**MUST** be parsed as an integer.
+  -  Any non-digit character in the string **SHOULD** result in an error, except
+     minus sign at the start of the string which denotes negative integer.
 
 If the JSON string value contains escaped Unicode code points (denoted using
 `\u`) they **SHOULD** be interpreted before identifying a prefix.
