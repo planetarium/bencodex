@@ -1,6 +1,6 @@
 "Project Name"	"Platform"	"Language"	"Spec Version"	"Encoder"	"Decoder"	"JSON Repr"	"Test Suite"	"Website"
 "bencodex-python"	"Python"	"Python"	"1"	"Provided"	"Provided"	"Unimplemented"	"1.0"	"https://github.com/planetarium/bencodex-python"
-"bencodex.net"	".NET"	"C#"	"1"	"Provided"	"Provided"	"Unimplemented"	"1.0"	"https://github.com/planetarium/bencodex.net"
+"bencodex.net"	".NET"	"C#"	"1"	"Provided"	"Provided"	"Implemented"	"1.0"	"https://github.com/planetarium/bencodex.net"
 "disjukr/bencodex"	"JavaScript"	"TypeScript"	"1"	"Provided"	"Provided"	"Unimplemented"	"1.0"	"https://github.com/disjukr/bencodex"
 "bencodex.js"	"JavaScript"	"TypeScript"	"1"	"Provided"	"Provided"	"Unimplemented"	"1.3"	"https://github.com/planetarium/bencodex.js"
 "bencodex-haskell"	"Haskell"	"Haskell"	"1"	"Provided"	"Provided"	"Unimplemented"	"1.0"	"https://github.com/dahlia/bencodex-haskell"
